@@ -6,30 +6,39 @@
     <title>Hockey</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <html data-theme="light"></html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+  <style>
+  .font-Manropes{
+    font-family: 'Manrope', sans-serif;
+  }
+  </style>
 </head>
-<body>
-    <header>
+<body class="font-Manropes">
+    <header class="lg:container lg:mx-auto sm:container sm:mx-auto">
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 mt-6">
                 <div class="navbar-start">
                   <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div tabindex="0" role="button" class="btn lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a class="s-c text-red-500">Home</a></li>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] text-sm font-normalp-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a class="s-c font-bold text-red-500">Home</a></li>
                       <li><a>About</a></li>
                       <li><a>Pages</a></li>
                       <li><a>Blog</a></li>
                       <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class=" text-xl">Hockey<span class="s-c">’s</span></a>
+                  <a class=" font-extrabold text-4xl">Hockey<span class="s-c text-red-600  ">’</span>s</a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center hidden lg:flex font-normal text-sm">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a class="s-c text-red-500">Home</a></li>
+                    <li><a class="s-c font-bold text-red-500">Home</a></li>
                     <li><a>About</a></li>
                     <li><a>Pages</a></li>
                     <li><a>Blog</a></li>
@@ -37,10 +46,49 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
+                 
+                  <img class="px-4 hidden sm:block"  src="./Images/Frame.png" alt="">
                     <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
                 </div>
               </div>
         </nav>
+        <div class="my-10 relative">
+          <div class="carousel w-full ">
+            <div id="slide1" class="carousel-item relative w-full rounded-2xl oll">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full  rounded-2xl oll">
+              <img src="./Images/c.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle  bg-black text-white">❮</a> 
+                <a href="#slide3" class="btn btn-circle  bg-black text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full  rounded-2xl oll">
+              <img src="./Images/x.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle  bg-black text-white">❮</a> 
+                <a href="#slide4" class="btn btn-circle  bg-black text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full  rounded-2xl oll">
+              <img src="./Images/z.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle  bg-black text-white">❮</a> 
+                <a href="#slide1" class="btn btn-circle  bg-black text-white">❯</a>
+              </div>
+            </div>
+            <div class=" rounded-2xl w-1/2 h-165 bg-black p-8 absolute bottom-10 right-2 mr-10 ">
+            <h1 class="text-2xl font-extrabold ml-5 text-white">Meet all the heroes from the field</h1>
+            <p class="text-gray-300 text-base ml-5 my-2">It takes years of hard work and dedication to become a champion.</p>
+          </div>
+          </div>
+          
+      </div>
     </header>
     <main>
 
